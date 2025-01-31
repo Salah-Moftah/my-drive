@@ -25,6 +25,7 @@
   border-radius: 20px ;
   box-shadow: var(--main-box-shadow);
   margin-bottom: 20px;
+  margin-left: 3px;
 }
 
 .sidebar .new-button:hover::before {
