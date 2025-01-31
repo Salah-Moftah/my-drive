@@ -115,6 +115,11 @@
 @media (max-width: 1024px) {
   .hide-on-large {
     display: none;
+    
+  }
+
+  .main-content .drive-table tbody tr td {
+    padding: 8px 0px;
   }
 }
 
