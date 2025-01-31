@@ -47,24 +47,26 @@ const Sidebar = () => {
         <FiPlus size={23} />
         <span>New</span>
       </a>
-      <ul className="sidebar-items">
-        {sidebarList.map((item) => (
-          <li key={item.id}>
-            <a
-              href={item.path}
-              className={activeItem === item.id ? "active" : ""}
-              onClick={() => setActiveItem(item.id)}
-            >
-              {getIconByName(item.iconName)}
-              <span>{item.name}</span>
-            </a>
-          </li>
-        ))}
-        <div className="storage">
-          <div className="progress" />
-          <p>3.73 GB of 15 GB used</p>
-          <button className="storage-btn">Get more storage</button>
-        </div>
+      <ul className="sidebar-items-container">
+        <ul className="sidebar-items">
+          {sidebarList.map((item) => (
+            <li key={item.id}>
+              <a
+                href={item.path}
+                className={activeItem === item.id ? "active" : ""}
+                onClick={() => setActiveItem(item.id)}
+              >
+                {getIconByName(item.iconName)}
+                <span>{item.name}</span>
+              </a>
+            </li>
+          ))}
+          <div className="storage">
+            <div className="progress" />
+            <p>3.73 GB of 15 GB used</p>
+            <button className="storage-btn">Get more storage</button>
+          </div>
+        </ul>
       </ul>
     </>
   );

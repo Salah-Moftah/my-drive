@@ -4,6 +4,7 @@
   min-width: 468px;
   border-radius: 20px 20px 0px 0px;
   padding: 20px 5px;
+  overflow: hidden;
 }
 
 .main-content .content-header {
@@ -53,6 +54,7 @@
 
 .main-content .drive-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
 }
 
@@ -63,6 +65,7 @@
 .main-content .drive-table th, .drive-table td {
   border-bottom: 1px solid #ddd;
   text-align: left;
+  white-space: nowrap;
 }
 
 .main-content .drive-table thead .name-col {
@@ -118,6 +121,10 @@
 @media (max-width: 768px) {
   .hide-on-medium {
     display: none;
+  }
+
+  .table-container {
+    overflow-x: auto;
   }
 }
 
