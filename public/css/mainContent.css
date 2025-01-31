@@ -1,0 +1,128 @@
+.main-content {
+  background-color: white;
+  height: 100%;
+  min-width: 468px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px 5px;
+}
+
+.main-content .content-header {
+  padding-right: 20px;
+}
+
+.main-content .content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 20px 0;
+}
+
+.main-content .content-head .my-drive-dropdown {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.main-content .content-head .my-drive-dropdown:hover {
+  background-color: var(--Shadow-color);
+}
+
+.content-head .layout {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.main-content .filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.main-content .table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 30px 13px 10px 20px;
+}
+
+.main-content .drive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-content .drive-table th, .drive-table th {
+  font-weight: 300;
+}
+
+.main-content .drive-table th, .drive-table td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.main-content .drive-table thead .name-col {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.main-content .drive-table tbody tr:hover {
+  background-color: var(--Shadow-color);
+}
+
+.main-content .drive-table tbody tr {
+  cursor: default;
+}
+
+.main-content .drive-table .owner-img {
+  width: 25px;
+  height: 25px;
+}
+
+.main-content .drive-table tbody .owner-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-content .drive-table .sorting  {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.main-content .drive-table .name-img {
+  width: 12px;
+  height: 15px;
+  opacity: 0.8;
+  margin: 0 16px;
+}
+
+.main-content .drive-table tbody td:not(:nth-child(1)) {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+@media (max-width: 1024px) {
+  .hide-on-large {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-medium {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hide-on-small {
+    display: none;
+  }
+}

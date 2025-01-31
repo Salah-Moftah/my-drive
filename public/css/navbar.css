@@ -32,9 +32,9 @@ header .search-bar {
   min-width: 750px;
 }
 
-header .search-bar.active {
-  background-color: white;
-  box-shadow: var(--main-box-shadow);
+.search-bar.focused {
+  background-color: white; 
+  box-shadow: var(--main-box-shadow); 
 }
 
 header .navigation {

@@ -1,16 +1,27 @@
+import { useState } from "react";
 import { sidebarList } from "../constants";
-import { FiHome, FiPlus, FiCpu, FiShare, FiClock, FiStar, FiAlertCircle, FiTrash, FiDatabase } from 'react-icons/fi';
+import {
+  FiHome,
+  FiPlus,
+  FiCpu,
+  FiShare,
+  FiClock,
+  FiStar,
+  FiAlertCircle,
+  FiTrash,
+  FiDatabase,
+} from "react-icons/fi";
 import { MdDriveFileMoveOutline } from "react-icons/md";
 
-
 const Sidebar = () => {
+  const [activeItem, setActiveItem] = useState(2);
 
   const getIconByName = (iconName) => {
     switch (iconName) {
       case "home":
         return <FiHome size={23} />;
       case "folder":
-        return <MdDriveFileMoveOutline  size={23} />;
+        return <MdDriveFileMoveOutline size={23} />;
       case "cpu":
         return <FiCpu size={23} />;
       case "share":
@@ -39,7 +50,11 @@ const Sidebar = () => {
       <ul className="sidebar-items">
         {sidebarList.map((item) => (
           <li key={item.id}>
-            <a href={item.path}>
+            <a
+              href={item.path}
+              className={activeItem === item.id ? "active" : ""}
+              onClick={() => setActiveItem(item.id)}
+            >
               {getIconByName(item.iconName)}
               <span>{item.name}</span>
             </a>

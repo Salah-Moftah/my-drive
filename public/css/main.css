@@ -4,7 +4,7 @@
   --main-background-color: #f8fafd;
   --main-blue-color: #0b57d0;
   --second-blue-color: #c2e7ff;
-  --hover-blue-color: #e3f3fe;
+  --hover-blue-color: #cce5ff;
   --hover-gray-color: #66686722;
   --hover-yellow-color: #fff1c8;
   --first-gray-color: #e9eef6;
@@ -62,8 +62,9 @@ ul {
   flex-direction: column;
 }
 .home-page .sections-area {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  height: 100%;
 }
 
 .hover-circle-background {
@@ -87,4 +88,20 @@ ul {
 
 .hover-circle-background.yellow:hover {
   background-color: var(--hover-yellow-color);
+}
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap:  15px;
+  border: solid 1px var(--icon-color);
+  width: fit-content;
+  border-radius: 10px;
+  padding: 8px 18px;
+  color: var(--icon-color);
+  cursor: pointer;
+}
+
+.filter-dropdown:hover {
+  background-color: var(--hover-gray-color);
 }

@@ -53,7 +53,7 @@
   background: var(--Shadow-color);
 }
 
-.sidebar .sidebar-items li a:focus {
+.sidebar .sidebar-items li a.active {
   background: #c2e7ff;
 }
 

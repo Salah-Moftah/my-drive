@@ -1,11 +1,12 @@
 import Sidebar from "./components/Sidebar";
 import SidePanel from "./components/SidePanel";
 import "../public/css/sidebar.css";
-import "../public/css/main-content.css";
-import "../public/css/side-panel.css";
+import "../public/css/mainContent.css";
+import "../public/css/sidePanel.css";
 import "../public/css/navbar.css";
 import { MdArrowForwardIos } from "react-icons/md";
 import NavBar from "./components/NavBar";
+import MainContent from "./components/MainContent";
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         <div className="sidebar">
           <Sidebar />
         </div>
-        <div className="main-content"></div>
+        <div className="main-content">
+          <MainContent />
+        </div>
         <div className="side-panel">
           <SidePanel />
         </div>

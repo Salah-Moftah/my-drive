@@ -62,4 +62,56 @@ export const navList = [
     icon: "/imgs/apps.svg",
     colorBackground: "gray",
   },
-]
+];
+
+export const filterList = [
+  { id: 1, name: "Type" },
+  { id: 2, name: "People" },
+  { id: 3, name: "Modified" },
+  { id: 4, name: "Source" },
+];
+
+export const fileList = [
+  {
+    id: 1,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+  {
+    id: 2,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+  {
+    id: 3,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+  {
+    id: 4,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+  {
+    id: 5,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+  {
+    id: 6,
+    name: "CV-Salah Moftah.pdf",
+    owner: "me",
+    date: "Jul 3, 2024",
+    size: "133 KB",
+  },
+];
